@@ -3,7 +3,7 @@
 A tiny turn-based pixel-art arcade game: you are an astronaut on a 9 × 6 board,
 and the goal is to **eat the aliens before they eat you**.
 
-### ▶️ [Play it in your browser](https://USERNAME.github.io/swipt/)
+### ▶️ [Play it in your browser](https://gkhnkrhn.github.io/swipt/)
 
 No install, no build step. It's plain HTML, CSS and JavaScript.
 

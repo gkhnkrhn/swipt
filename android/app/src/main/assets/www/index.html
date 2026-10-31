@@ -1,0 +1,58 @@
+<!Doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/map.js"></script>
+		<script type="text/javascript" src="js/move.js"></script>
+		<script type="text/javascript" src="js/sound.js"></script>
+		<meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+	</head>
+	<body oncontextmenu="return false;">
+		
+		<div class="buttons">
+			<img onClick="Main.reset()" src="img/reset.png"/>
+			<img id="mute-button" onClick="Sound.onOff()" src="img/muteon.png"/>
+		</div>
+	
+		<div class="blured" id="blured">
+			<img class="play-button" id="play-button" onclick="Main.playButton()" src="img/play.png"/>
+			
+			<div class="htplay" id="htplay">
+				<div class="htplaytxt">How to play</div>
+				<img class="animation" src="img/animation.gif"/>
+				<img class="first-play" onClick="Main.playButton()" src="img/play.png"/>
+			</div>
+		</div>
+		
+		<div class="con">
+			<div class="bar">
+				<div class="hiscore" >HI: <span id="hiscore">0</span></div>
+				<div class="score" id="score">0</div>
+			</div>
+			
+			<div class="board" id="board"></div>
+		
+			<div class="result-bg" id="result-bg">
+				<div class="result" id="result">
+					<div class="game-over">Game Over</div>
+					<div class="fscore" id="fscore"></div>
+					<div class="fhiscore" id="fhiscore"></div>
+					<img onClick="Main.reset()" src="img/reset.png"/>
+				</div>
+			</div>
+		</div>
+		
+		<audio id="move">
+			<source src="sound/move.ogg" type="audio/ogg">
+		</audio>
+		
+		<audio id="eat">
+			<source src="sound/eat.wav" type="audio/wav">
+		</audio>
+		
+		<audio id="fail">
+			<source src="sound/fail.wav" type="audio/wav">
+		</audio>
+	</body>
+</html>
